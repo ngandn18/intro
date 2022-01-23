@@ -1,8 +1,11 @@
 # Project
 
-My Project 6 - Udacity Nano ML degree
+This is place where I have my blog posts
 
-Image classification - cifar-10 
+### [My Project 6 - Capstone project 2 - Udacity Nano ML degree]()
 
-Pytorch - densenet161
+Image classification - cifar-10 - Pytorch - densenet161
 
+### [My Project 5 - Capstone project 1 - Udacity Nano ML degree]()
+
+Starbucks project
