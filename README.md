@@ -1,4 +1,8 @@
 # Project
+
 My Project 6 - Udacity Nano ML degree
-Image classification - cifar-10 - pytorch - densenet161
-`
+
+Image classification - cifar-10 
+
+Pytorch - densenet161
+
