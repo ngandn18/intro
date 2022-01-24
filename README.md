@@ -1,4 +1,4 @@
-# Project
+## Introduction
 
 This is a wonderful place on github where I have my blog posts for two capstone projects in my course AWS Machine Learning Engineer Nanodegree on Udacity.
 
