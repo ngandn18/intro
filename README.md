@@ -1,6 +1,9 @@
 # Project
 
-This is place where I have my blog posts
+This is a wonderful place on github where I have my blog posts for two capstone projects in my course AWS Machine Learning Engineer Nanodegree on Udacity.
+
+Thanks GitHub and Udacity for all valuable supports.
+
 
 ### [My Project 6 - Capstone project 2 - Udacity Nano ML degree](https://ngandn18.github.io/intro/proj_6.html)
 
