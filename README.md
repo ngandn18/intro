@@ -5,7 +5,7 @@ This is a wonderful place on github where I have my blog posts for two capstone 
 Thanks GitHub and Udacity for all valuable supports.
 
 
-### [My Project 6 - Capstone project 2 - Udacity-Aws Machine Learning Engineer Nanodegree](https://ngandn18.github.io/intro/proj_6.html)
+### [My Project 6 - Capstone project 2 - Udacity-Aws Machine Learning Engineer Nanodegree](https://ngandn18.github.io/intro/proj6.html)
 
 Image classification - cifar-10 - Pytorch - densenet161.
 
