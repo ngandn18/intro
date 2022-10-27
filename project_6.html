@@ -44,7 +44,7 @@ h1
 	margin-right:0in;
 	margin-bottom:6.0pt;
 	margin-left:.5in;
-	text-indent:-.25in;
+	text-indent:12px;
 	page-break-after:avoid;
 	font-size:22.0pt;
 	font-family:"Palatino Linotype",serif;}
@@ -54,7 +54,7 @@ h2
 	margin-right:0in;
 	margin-bottom:6.0pt;
 	margin-left:.25in;
-	text-indent:-.25in;
+	text-indent:12px;
 	page-break-after:avoid;
 	font-size:16.0pt;
 	font-family:"Palatino Linotype",serif;}
@@ -374,34 +374,34 @@ cifar-10 pickle file and transform into all images to organize three folders <i>
 <i>test</i>, and <i>valid</i> for the problem of image classification. We will
 determine the whole process on AWS:</span></p>
 
-<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'><span lang=EN-US>1.<span
+<p class=MsoListParagraphCxSpFirst style='text-indent:12px'><span lang=EN-US>1.<span
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
 lang=EN-US>Extract data from original byte-format data.</span></p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+<p class=MsoListParagraphCxSpMiddle style='text-indent:12px'><span
 lang=EN-US>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span><span lang=EN-US>Create the image data directories train, valid,
 and test.</span></p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+<p class=MsoListParagraphCxSpMiddle style='text-indent:12px'><span
 lang=EN-US>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span><span lang=EN-US>Try some pretrained models on local machine to
 have a best selected model for perform on AWS. </span></p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+<p class=MsoListParagraphCxSpMiddle style='text-indent:12px'><span
 lang=EN-US>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span><span lang=EN-US>Copy the image data directories train, valid,
 and test into s3 bucket.</span></p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+<p class=MsoListParagraphCxSpMiddle style='text-indent:12px'><span
 lang=EN-US>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span><span lang=EN-US>Tuning hyperparameters on AWS.</span></p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+<p class=MsoListParagraphCxSpMiddle style='text-indent:12px'><span
 lang=EN-US>6.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span><span lang=EN-US>Training on AWS</span></p>
 
-<p class=MsoListParagraphCxSpLast style='text-indent:-.25in'><span lang=EN-US>7.<span
+<p class=MsoListParagraphCxSpLast style='text-indent:12px'><span lang=EN-US>7.<span
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
 lang=EN-US>Create endpoint to predict. </span></p>
 
@@ -477,32 +477,32 @@ lang=EN-US>original data</span></a><span lang=EN-US> is an zip file of format
 tar.gz, it consists of 8 pickled files containing data and related information.
 Six important files of data are: </span></p>
 
-<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'><span lang=EN-US>-<span
+<p class=MsoListParagraphCxSpFirst style='text-indent:12px'><span lang=EN-US>-<span
 style='font:7.0pt "Times New Roman"'> &nbsp;
 </span></span><span lang=EN-US>data_batch_1: pickled file contains 10,000
 images. </span></p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+<p class=MsoListParagraphCxSpMiddle style='text-indent:12px'><span
 lang=EN-US>-<span style='font:7.0pt "Times New Roman"'> &nbsp;
 </span></span><span lang=EN-US>data_batch_2: pickled file contains 10,000
 images.</span></p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+<p class=MsoListParagraphCxSpMiddle style='text-indent:12px'><span
 lang=EN-US>-<span style='font:7.0pt "Times New Roman"'> &nbsp;
 </span></span><span lang=EN-US>data_batch_3: pickled file contains 10,000
 images.</span></p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+<p class=MsoListParagraphCxSpMiddle style='text-indent:12px'><span
 lang=EN-US>-<span style='font:7.0pt "Times New Roman"'> &nbsp;
 </span></span><span lang=EN-US>data_batch_4: pickled file contains 10,000
 images.</span></p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+<p class=MsoListParagraphCxSpMiddle style='text-indent:12px'><span
 lang=EN-US>-<span style='font:7.0pt "Times New Roman"'> &nbsp;
 </span></span><span lang=EN-US>data_batch_5: pickled file contains 10,000
 images.</span></p>
 
-<p class=MsoListParagraphCxSpLast style='text-indent:-.25in'><span lang=EN-US>-<span
+<p class=MsoListParagraphCxSpLast style='text-indent:12px'><span lang=EN-US>-<span
 style='font:7.0pt "Times New Roman"'> &nbsp;
 </span></span><span lang=EN-US>test_batch: : pickled file contains 10,000
 images.</span></p>
@@ -572,16 +572,16 @@ transform them into three image data directories for training, validation, and
 testing. There are ten classes in our data, and the distribution of ten classes
 in each file is almost equally proportional.</span></p>
 
-<p style='text-indent:-.25in'><span style='font:7.0pt "Times New Roman"'> 
+<p style='text-indent:12px'><span style='font:7.0pt "Times New Roman"'> 
 Training data: 40,000 images of 4 files data_batch_1,
 data_batch_2, data_batch_3, and data_batch_4</span></p>
 
-<p style='text-indent:-.25in'><span
+<p style='text-indent:12px'><span
 lang=EN-US style='font-family:Arial'><span style='font:7.0pt "Times New Roman"'> 
 </span></span><span lang=EN-US>Validation data: 10,000 images of file
 data_batch_5.</span></p>
 
-<p style='text-indent:-.25in'><span lang=EN-US
+<p style='text-indent:12px'><span lang=EN-US
 style='font-family:Arial'><span style='font:7.0pt "Times New Roman"'> 
 </span></span><span lang=EN-US>Testing data: 10,000 images of file test_batch</span></p>
 
@@ -591,18 +591,18 @@ lang=EN-US> </span></h2>
 
 <p class=MsoNormal><span lang=EN-US>First, we create </span></p>
 
-<p class=MsoListParagraphCxSpFirst style='margin-left:.75in;text-indent:-.25in'><span
+<p class=MsoListParagraphCxSpFirst style='margin-left:.75in;text-indent:12px'><span
 lang=EN-US>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span><i><span lang=EN-US>train_dic</span></i><span lang=EN-US>: a list
 contains 5 dictionary of data from 5 files <i>data_batch_1, data_batch_2, -,
 data_batch_5</i>.</span></p>
 
-<p class=MsoListParagraphCxSpMiddle style='margin-left:.75in;text-indent:-.25in'><span
+<p class=MsoListParagraphCxSpMiddle style='margin-left:.75in;text-indent:12px'><span
 lang=EN-US>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span><i><span lang=EN-US>test_dic</span></i><span lang=EN-US>: a
 dictionary of data from <i>test_batch</i>.</span></p>
 
-<p class=MsoListParagraphCxSpLast style='margin-left:.75in;text-indent:-.25in'><span
+<p class=MsoListParagraphCxSpLast style='margin-left:.75in;text-indent:12px'><span
 lang=EN-US>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span><i><span lang=EN-US>batch_dic</span></i><span lang=EN-US>: a
 dictionary of data from <i>batches.meta</i>.</span></p>
@@ -713,13 +713,13 @@ of <i>uint8</i> number, so each row is data of a color image with resolution
 
 <p class=MsoNormal><span lang=EN-US>Similarly, we get:</span></p>
 
-<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'><span
+<p class=MsoListParagraphCxSpFirst style='text-indent:12px'><span
 class=CodeStyleChar><span lang=EN-US style='font-family:"Palatino Linotype",serif;
 color:windowtext'>-<span style='font:7.0pt "Times New Roman"'> &nbsp;
 </span></span></span><i><span lang=EN-US>filename</span></i><span lang=EN-US>:
 from </span><span class=CodeStyleChar><span lang=EN-US style='font-size:11.0pt'>train_dic[0][b'filenames]</span></span></p>
 
-<p class=MsoListParagraphCxSpLast style='text-indent:-.25in'><span lang=EN-US>-<span
+<p class=MsoListParagraphCxSpLast style='text-indent:12px'><span lang=EN-US>-<span
 style='font:7.0pt "Times New Roman"'> &nbsp;
 </span></span><i><span lang=EN-US>label</span></i><span class=CodeStyleChar><span
 lang=EN-US style='font-size:11.0pt'>: from </span></span><span lang=EN-US>-</span><span
@@ -2333,15 +2333,15 @@ width=637 height=525 id="Picture 5" src="project_6_files/image006.png"></p>
 <p class=MsoNormal><span lang=EN-US>Look in the Cloud watch log, we can see a
 very good result after 15 training epochs:</span></p>
 
-<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'><span lang=EN-US>-<span
+<p class=MsoListParagraphCxSpFirst style='text-indent:12px'><span lang=EN-US>-<span
 style='font:7.0pt "Times New Roman"'> &nbsp;
 </span></span><span lang=EN-US>Train accuracy:�������� 0.9077 ~ 91%</span></p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+<p class=MsoListParagraphCxSpMiddle style='text-indent:12px'><span
 lang=EN-US>-<span style='font:7.0pt "Times New Roman"'> &nbsp;
 </span></span><span lang=EN-US>Valid accuracy: ������� 0.9738 ~ 98%</span></p>
 
-<p class=MsoListParagraphCxSpLast style='text-indent:-.25in'><span lang=EN-US>-<span
+<p class=MsoListParagraphCxSpLast style='text-indent:12px'><span lang=EN-US>-<span
 style='font:7.0pt "Times New Roman"'> &nbsp;
 </span></span><span lang=EN-US>Test accuracy: ��������� 0.9729 ~ 97%</span></p>
 
@@ -3606,15 +3606,15 @@ width=583 height=349 id="Picture 7" src="project_6_files/image009.png"></p>
 <p class=MsoNormal><a name="_Toc92569612"><span lang=EN-US>Our result is much better.
 We have a very good result after 15 training epochs</span></a></p>
 
-<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'><span lang=EN-US>-<span
+<p class=MsoListParagraphCxSpFirst style='text-indent:12px'><span lang=EN-US>-<span
 style='font:7.0pt "Times New Roman"'> &nbsp;
 </span></span><span lang=EN-US>Train accuracy:�������� 0.9077 ~ 91%</span></p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+<p class=MsoListParagraphCxSpMiddle style='text-indent:12px'><span
 lang=EN-US>-<span style='font:7.0pt "Times New Roman"'> &nbsp;
 </span></span><span lang=EN-US>Valid accuracy: ������� 0.9738 ~ 98%</span></p>
 
-<p class=MsoListParagraphCxSpLast style='text-indent:-.25in'><span lang=EN-US>-<span
+<p class=MsoListParagraphCxSpLast style='text-indent:12px'><span lang=EN-US>-<span
 style='font:7.0pt "Times New Roman"'> &nbsp;
 </span></span><span lang=EN-US>Test accuracy: ��������� 0.9729 ~ 97%</span></p>
 
@@ -3622,54 +3622,54 @@ style='font:7.0pt "Times New Roman"'> &nbsp;
 style='font:7.0pt "Times New Roman"'> &nbsp;&nbsp;&nbsp;
 </span></span><span lang=EN-US>Conclusion</span></a></h1>
 
-<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'><span lang=EN-US>1.<span
+<p class=MsoListParagraphCxSpFirst style='text-indent:12px'><span lang=EN-US>1.<span
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
 lang=EN-US>We examine and analyze the CIFAR-10 tar.gz file to transform from
 pickle files into 3 folders of useful image data.</span></p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+<p class=MsoListParagraphCxSpMiddle style='text-indent:12px'><span
 lang=EN-US>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span><span lang=EN-US>We copy our image data into s3 bucket for Aws
 Sagemaker Pytorch project.</span></p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+<p class=MsoListParagraphCxSpMiddle style='text-indent:12px'><span
 lang=EN-US>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span><span lang=EN-US>We perform a tuning job for our model on <i>ml.g4dn.4xlarge</i>
 , and get the best hyperparameters for our training job.</span></p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+<p class=MsoListParagraphCxSpMiddle style='text-indent:12px'><span
 lang=EN-US>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span><span lang=EN-US>We complete the training job for our model on
 Aws successfully.</span></p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+<p class=MsoListParagraphCxSpMiddle style='text-indent:12px'><span
 lang=EN-US>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span><span lang=EN-US>We get a very high accuracy for train, valid,
 and test that are recorded in Cloud Watch logs. </span></p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+<p class=MsoListParagraphCxSpMiddle style='text-indent:12px'><span
 lang=EN-US>6.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span><span lang=EN-US>We deploy an endpoint for prediction on <i>ml.m5.large</i>
 successfully.</span></p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+<p class=MsoListParagraphCxSpMiddle style='text-indent:12px'><span
 lang=EN-US>7.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span><span lang=EN-US>We try many predictions with our test images and
 get many wonderful results. -</span></p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+<p class=MsoListParagraphCxSpMiddle style='text-indent:12px'><span
 lang=EN-US>8.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span><span lang=EN-US>We analyze the accuracy of each classes in
 10,000 test images and have a small plot to display this result.</span></p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+<p class=MsoListParagraphCxSpMiddle style='text-indent:12px'><span
 lang=EN-US>9.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span><span lang=EN-US>We completely perform the Pytorch image
 classification problem from training to have a useful model, and from this
 model we deploy the endpoint on Aws to predict with 10,000 test images with the
 calculation of the successful ratio of each class.</span></p>
 
-<p class=MsoListParagraphCxSpLast style='text-indent:-.25in'><span lang=EN-US>10.<span
+<p class=MsoListParagraphCxSpLast style='text-indent:12px'><span lang=EN-US>10.<span
 style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span lang=EN-US>We
 have a research to compare the result with ours.</span></p>
 
@@ -3677,36 +3677,36 @@ have a research to compare the result with ours.</span></p>
 lang=EN-US>VII.<span style='font:7.0pt "Times New Roman"'> &nbsp;&nbsp;&nbsp;
 </span></span><span lang=EN-US>Improvement</span></a></h1>
 
-<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'><span lang=EN-US>1.<span
+<p class=MsoListParagraphCxSpFirst style='text-indent:12px'><span lang=EN-US>1.<span
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
 lang=EN-US>We can review and test more to find the reason why the accuracy
 through endpoint is much lower than the result from training - <i>97%</i> and <i>80%</i>.</span></p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+<p class=MsoListParagraphCxSpMiddle style='text-indent:12px'><span
 lang=EN-US>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span><span lang=EN-US>We can test more to compare more results from
 two different optimizer optim.SGD and optim.Adam. In this project, we use
 optim.SGD because when trying on local machine and Kaggle, optim.Adam is less
 effective than optim.SGD.</span></p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+<p class=MsoListParagraphCxSpMiddle style='text-indent:12px'><span
 lang=EN-US>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span><span lang=EN-US>We can test more suitable image size in
 torchvision transform to get the best suitable size. When test this model with
 the image size is 224, we get the higher accuracy than inage size of 324, 512,
 1024.</span></p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+<p class=MsoListParagraphCxSpMiddle style='text-indent:12px'><span
 lang=EN-US>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span><span lang=EN-US>We can test more various model to have the most
 suitable one for our data.</span></p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+<p class=MsoListParagraphCxSpMiddle style='text-indent:12px'><span
 lang=EN-US>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span><span lang=EN-US>We can use other compatible machine learning models
 to learn more with these wonderful datasets.</span></p>
 
-<p class=MsoListParagraphCxSpLast style='text-indent:-.25in'><span lang=EN-US>6.<span
+<p class=MsoListParagraphCxSpLast style='text-indent:12px'><span lang=EN-US>6.<span
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
 lang=EN-US>There are many aspects that we can study to have more efficient
 model.</span></p>
@@ -3715,40 +3715,40 @@ model.</span></p>
 style='font:7.0pt "Times New Roman"'> &nbsp;&nbsp;&nbsp;
 </span></span><span lang=EN-US>References</span></a></h1>
 
-<p class=MsoListParagraphCxSpFirst style='margin-left:.75in;text-indent:-.25in'><span
+<p class=MsoListParagraphCxSpFirst style='margin-left:.75in;text-indent:12px'><span
 lang=EN-US>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span><span lang=EN-US><a
 href="https://sagemaker.readthedocs.io/en/stable/frameworks/pytorch/using_pytorch.html">sagemaker.readthedocs.io-using_pytorch.html</a></span></p>
 
-<p class=MsoListParagraphCxSpMiddle style='margin-left:.75in;text-indent:-.25in'><span
+<p class=MsoListParagraphCxSpMiddle style='margin-left:.75in;text-indent:12px'><span
 lang=EN-US>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span><span lang=EN-US><a
 href="https://sagemaker.readthedocs.io/en/stable/frameworks/pytorch/using_pytorch.html#train-a-model-with-pytorch">sagemaker.readthedocs.io-train-a-model-with-pytorch</a></span></p>
 
-<p class=MsoListParagraphCxSpMiddle style='margin-left:.75in;text-indent:-.25in'><span
+<p class=MsoListParagraphCxSpMiddle style='margin-left:.75in;text-indent:12px'><span
 lang=EN-US>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span><span lang=EN-US><a
 href="https://sagemaker.readthedocs.io/en/stable/frameworks/pytorch/using_pytorch.html#deploy-pytorch-models">sagemaker.readthedocs.io-deploy-pytorch-models</a></span></p>
 
-<p class=MsoListParagraphCxSpMiddle style='margin-left:.75in;text-indent:-.25in'><span
+<p class=MsoListParagraphCxSpMiddle style='margin-left:.75in;text-indent:12px'><span
 lang=EN-US>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span><span lang=EN-US><a
 href="https://aws.amazon.com/ec2/instance-types/g4/">Amazon EC2 G4 Instances -
 Amazon Web Services (AWS)</a></span></p>
 
-<p class=MsoListParagraphCxSpMiddle style='margin-left:.75in;text-indent:-.25in'><span
+<p class=MsoListParagraphCxSpMiddle style='margin-left:.75in;text-indent:12px'><span
 lang=EN-US>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span><span lang=EN-US><a
 href="https://ramseyelbasheer.io/2021/06/20/a-2021-guide-to-improving-cnns-optimizers-adam-vs-sgd/">A
 2021 Guide to improving CNNs-Optimizers: Adam vs SGD - ML</a></span></p>
 
-<p class=MsoListParagraphCxSpMiddle style='margin-left:.75in;text-indent:-.25in'><span
+<p class=MsoListParagraphCxSpMiddle style='margin-left:.75in;text-indent:12px'><span
 lang=EN-US>6.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span><span lang=EN-US><a
 href="https://pytorch.org/tutorials/beginner/transfer_learning_tutorial.html">Transfer
 Learning for Computer Vision Tutorial - PyTorch Tutorials</a></span></p>
 
-<p class=MsoListParagraphCxSpLast style='margin-left:.75in;text-indent:-.25in'><span
+<p class=MsoListParagraphCxSpLast style='margin-left:.75in;text-indent:12px'><span
 lang=EN-US>7.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span><span lang=EN-US><a
 href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html">Matplotlib.pyplot.plot
