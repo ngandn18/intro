@@ -573,17 +573,17 @@ testing. There are ten classes in our data, and the distribution of ten classes
 in each file is almost equally proportional.</span></p>
 
 <p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'><span lang=EN-US
-style='font-family:Symbol'>�<span style='font:7.0pt "Times New Roman"'>&emsp;
+style='font-family:Symbol'>-<span style='font:7.0pt "Times New Roman"'>&emsp;
 </span></span><span lang=EN-US>Training data: 40,000 images of 4 files data_batch_1,
 data_batch_2, data_batch_3, and data_batch_4</span></p>
 
 <p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
-lang=EN-US style='font-family:Symbol'>�<span style='font:7.0pt "Times New Roman"'>&emsp;
+lang=EN-US style='font-family:Symbol'>-<span style='font:7.0pt "Times New Roman"'>&emsp;
 </span></span><span lang=EN-US>Validation data: 10,000 images of file
 data_batch_5.</span></p>
 
 <p class=MsoListParagraphCxSpLast style='text-indent:-.25in'><span lang=EN-US
-style='font-family:Symbol'>�<span style='font:7.0pt "Times New Roman"'>&emsp;
+style='font-family:Symbol'>-<span style='font:7.0pt "Times New Roman"'>&emsp;
 </span></span><span lang=EN-US>Testing data: 10,000 images of file test_batch</span></p>
 
 <h2><a name="_Toc93645204"><span lang=EN-US>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
@@ -595,7 +595,7 @@ lang=EN-US> </span></h2>
 <p class=MsoListParagraphCxSpFirst style='margin-left:.75in;text-indent:-.25in'><span
 lang=EN-US>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span><i><span lang=EN-US>train_dic</span></i><span lang=EN-US>: a list
-contains 5 dictionary of data from 5 files <i>data_batch_1, data_batch_2, �,
+contains 5 dictionary of data from 5 files <i>data_batch_1, data_batch_2, -,
 data_batch_5</i>.</span></p>
 
 <p class=MsoListParagraphCxSpMiddle style='margin-left:.75in;text-indent:-.25in'><span
@@ -710,7 +710,7 @@ lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#D4D4D4'>dt_train
 
 <p class=MsoNormal><span lang=EN-US>Each batch has 10,000 rows of 3072 columns
 of <i>uint8</i> number, so each row is data of a color image with resolution
-(32, 32) � 3072 = 3*32*32.</span></p>
+(32, 32) - 3072 = 3*32*32.</span></p>
 
 <p class=MsoNormal><span lang=EN-US>Similarly, we get:</span></p>
 
@@ -723,7 +723,7 @@ from </span><span class=CodeStyleChar><span lang=EN-US style='font-size:11.0pt'>
 <p class=MsoListParagraphCxSpLast style='text-indent:-.25in'><span lang=EN-US>-<span
 style='font:7.0pt "Times New Roman"'>&emsp;&nbsp;
 </span></span><i><span lang=EN-US>label</span></i><span class=CodeStyleChar><span
-lang=EN-US style='font-size:11.0pt'>: from </span></span><span lang=EN-US>�</span><span
+lang=EN-US style='font-size:11.0pt'>: from </span></span><span lang=EN-US>-</span><span
 class=CodeStyleChar><span lang=EN-US style='font-size:11.0pt'>train_dic[0][b'labels']</span></span></p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
@@ -989,7 +989,7 @@ Consolas;color:#D4D4D4'>]</span></p>
 
 <p class=MsoNormal><span lang=EN-US>Dataframe <i>train</i> has 40,000 rows and dataframe
 <i>valid</i> has 10,000 rows. We have an almost uniform distribution for the 10
-labels. �</span></p>
+labels. -</span></p>
 
 <table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0
  style='margin-left:.25in;border-collapse:collapse;border:none'>
@@ -1057,7 +1057,7 @@ image folders</span></h2>
 <p class=MsoNormal><span lang=EN-US>We write a function to transform data from
 a dataframe into a compatible folder <i>train</i>, <i>test</i>, and <i>valid, </i>and
 attach a new column <i>fullname</i> to dataframe. Each folder has 10 child
-folders named from 10 labels (0, 1, �, 9). </span></p>
+folders named from 10 labels (0, 1, -, 9). </span></p>
 
 <p class=MsoNormal><span lang=EN-US>We use the function <i>imsave</i> of <i>matplotlib</i>
 to save image file.</span></p>
@@ -1119,7 +1119,7 @@ lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#D4D4D4'>:</span><
 margin-left:.5in;margin-bottom:.0001pt;line-height:14.25pt;background:#1E1E1E'><span
 lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#D4D4D4'>&nbsp;
 &nbsp; # &nbsp; &nbsp; os.mkdir(dirname)</span><span style='font-size:10.5pt;
-font-family:Consolas;color:#D4D4D4'>&nbsp; � </span></p>
+font-family:Consolas;color:#D4D4D4'>&nbsp; - </span></p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
 margin-left:.5in;margin-bottom:.0001pt;line-height:14.25pt;background:#1E1E1E'><span
@@ -1161,7 +1161,7 @@ lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#4EC9B0'> </span><
 <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
 margin-left:.5in;margin-bottom:.0001pt;text-indent:.5in;line-height:14.25pt;
 background:#1E1E1E'><span lang=EN-US style='font-size:10.5pt;font-family:Consolas;
-color:#4EC9B0'>� </span><span style='font-size:10.5pt;font-family:Consolas;
+color:#4EC9B0'>- </span><span style='font-size:10.5pt;font-family:Consolas;
 color:#4EC9B0'>os</span><span style='font-size:10.5pt;font-family:Consolas;
 color:#D4D4D4'>.</span><span style='font-size:10.5pt;font-family:Consolas;
 color:#DCDCAA'>makedirs</span><span style='font-size:10.5pt;font-family:Consolas;
@@ -1172,7 +1172,7 @@ color:#9CDCFE'>exist_ok</span><span style='font-size:10.5pt;font-family:Consolas
 color:#D4D4D4'> = </span><span style='font-size:10.5pt;font-family:Consolas;
 color:#569CD6'>True</span><span style='font-size:10.5pt;font-family:Consolas;
 color:#D4D4D4'>)</span><span lang=EN-US style='font-size:10.5pt;font-family:
-Consolas;color:#D4D4D4'>����� � </span></p>
+Consolas;color:#D4D4D4'>����� - </span></p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
 margin-left:.5in;margin-bottom:.0001pt;line-height:14.25pt;background:#1E1E1E'><span
@@ -1435,7 +1435,7 @@ lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#D4D4D4'>)))</span
 
 <p class=CodeStyleCxSpMiddle><span lang=EN-US>data/valid  �10000</span></p>
 
-<p class=CodeStyleCxSpLast><span lang=EN-US>data/test � �10000</span></p>
+<p class=CodeStyleCxSpLast><span lang=EN-US>data/test - �10000</span></p>
 
 <p class=MsoNormal><span lang=EN-US>Now, we save all into csv files for further
 use.</span></p>
@@ -1549,7 +1549,7 @@ lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#D4D4D4'>)</span><
 margin-left:.5in;margin-bottom:.0001pt;line-height:14.25pt;background:#1E1E1E'><span
 lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#D4D4D4'>classes</span></p>
 
-<p class=MsoNormal><span lang=EN-US>�</span></p>
+<p class=MsoNormal><span lang=EN-US>-</span></p>
 
 <h2><a name="_Toc93645207"><span lang=EN-US>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
 </span></span><span lang=EN-US>Process data to s3</span></a></h2>
@@ -2154,7 +2154,7 @@ src="project_6_files/image003.png"></p>
  <tr>
   <td width=234 valign=top style='width:175.25pt;padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal><span lang=EN-US>Since our student policy of timeout on
-  Aws gateway, and the tuning time is too long � about 5 hours for one training
+  Aws gateway, and the tuning time is too long - about 5 hours for one training
   job, so after 10 hours we can't get these best hyperparameter by code, we can
   use the Sagemaker interface to view best training job to get manually.</span></p>
   </td>
@@ -2326,7 +2326,7 @@ width=438 height=403 id="Picture 4" src="project_6_files/image005.png"></p>
 and profiling, but once more, because of our student policy of timeout on Aws
 gateway, our notebook gets lost connection, so we cannot get these info as
 expected. Although we select a very powerful instance, the successful training
-process takes nearly about 5 hours � 17661 seconds.</span></p>
+process takes nearly about 5 hours - 17661 seconds.</span></p>
 
 <p class=MsoNormal align=center style='text-align:center'><img border=0
 width=637 height=525 id="Picture 5" src="project_6_files/image006.png"></p>
@@ -2535,7 +2535,7 @@ lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#D4D4D4'>&nbsp;
 
 <p class=MsoNormal><span lang=EN-US>File <i>inference.py </i>is used as an
 entry point. An important note is the used model in this entry point must be
-the same as the model in our training job � <i>train_model.py</i>.</span></p>
+the same as the model in our training job - <i>train_model.py</i>.</span></p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
 margin-left:.5in;margin-bottom:.0001pt;line-height:14.25pt;background:#1E1E1E'><span
@@ -2770,7 +2770,7 @@ color:#C586C0'>return</span><span lang=EN-US style='font-size:10.5pt;
 font-family:Consolas;color:#D4D4D4'> </span><span lang=EN-US style='font-size:
 10.5pt;font-family:Consolas;color:#9CDCFE'>prediction</span></p>
 
-<p class=MsoNormal><span lang=EN-US>We adjust our code a little bit � only insert
+<p class=MsoNormal><span lang=EN-US>We adjust our code a little bit - only insert
 one line to adjust the torch object after tr�norming:</span></p>
 
 <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
@@ -3014,7 +3014,7 @@ filename, classid)</span></p>
 
 <p class=CodeStyleCxSpMiddle><span lang=EN-US>�10 </span></p>
 
-<p class=CodeStyleCxSpMiddle><span lang=EN-US>�[-0.31202423572540283,
+<p class=CodeStyleCxSpMiddle><span lang=EN-US>-[-0.31202423572540283,
 -2.3471438884735107, 1.5576268434524536, 5.096643924713135, 1.6828807592391968,
 1.3144971132278442, 3.891735076904297, -2.656201124191284, -1.17906653881073,
 -3.5364975929260254]</span></p>
@@ -3179,9 +3179,9 @@ lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#569CD6'>: .0f}</s
 lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#CE9178'>%'</span><span
 lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#D4D4D4'>)</span></p>
 
-<p class=CodeStyleCxSpFirst><span lang=EN-US>Time 100 Prediction:� 12.43 s</span></p>
+<p class=CodeStyleCxSpFirst><span lang=EN-US>Time 100 Prediction:- 12.43 s</span></p>
 
-<p class=CodeStyleCxSpLast><span lang=EN-US>Accuracy of 100 predictions:�
+<p class=CodeStyleCxSpLast><span lang=EN-US>Accuracy of 100 predictions:-
 0.8500 = 85%</span></p>
 
 <p class=MsoNormal><span lang=EN-US>The accuracy score of 100 predictions is
@@ -3317,7 +3317,7 @@ Consolas;color:#D4D4D4'>time() - since</span><span lang=EN-US style='font-size:
 style='font-size:10.5pt;font-family:Consolas;color:#CE9178'> s'</span><span
 lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#D4D4D4'>)</span></p>
 
-<p class=CodeStyle><span lang=EN-US>Time 10000 Prediction:� 1155.7 s</span></p>
+<p class=CodeStyle><span lang=EN-US>Time 10000 Prediction:- 1155.7 s</span></p>
 
 <p class=MsoNormal><span lang=EN-US>Total executive time of predicting 10,000
 test image is 1155.7s, less than 20 minutes. And we calculate the accuracy
@@ -3390,7 +3390,7 @@ lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#569CD6'>False</sp
 lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#D4D4D4'>)</span></p>
 
 <p class=CodeStyle><span lang=EN-US>Accuracy of all test directory
-predictions:� 0.8035 = 80%</span></p>
+predictions:- 0.8035 = 80%</span></p>
 
 <p class=MsoNormal><span lang=EN-US>And we check the accuracy score of each
 class:</span></p>
@@ -3521,33 +3521,33 @@ lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#569CD6'>: 0.4f}</
 lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#CE9178'>'</span><span
 lang=EN-US style='font-size:10.5pt;font-family:Consolas;color:#D4D4D4'>)</span></p>
 
-<p class=CodeStyleCxSpFirst><span lang=EN-US>Accuracy of class 0:� 0.9280 ~ 93%</span></p>
+<p class=CodeStyleCxSpFirst><span lang=EN-US>Accuracy of class 0:- 0.9280 ~ 93%</span></p>
 
-<p class=CodeStyleCxSpMiddle><span lang=EN-US>Accuracy of class 1:� 0.7880 ~
+<p class=CodeStyleCxSpMiddle><span lang=EN-US>Accuracy of class 1:- 0.7880 ~
 79%</span></p>
 
-<p class=CodeStyleCxSpMiddle><span lang=EN-US>Accuracy of class 2:� 0.8260 ~
+<p class=CodeStyleCxSpMiddle><span lang=EN-US>Accuracy of class 2:- 0.8260 ~
 83%</span></p>
 
-<p class=CodeStyleCxSpMiddle><span lang=EN-US>Accuracy of class 3:� 0.9030 ~
+<p class=CodeStyleCxSpMiddle><span lang=EN-US>Accuracy of class 3:- 0.9030 ~
 90%</span></p>
 
-<p class=CodeStyleCxSpMiddle><span lang=EN-US>Accuracy of class 4:� 0.8700 ~
+<p class=CodeStyleCxSpMiddle><span lang=EN-US>Accuracy of class 4:- 0.8700 ~
 87%</span></p>
 
-<p class=CodeStyleCxSpMiddle><span lang=EN-US>Accuracy of class 5:� 0.5850 ~
+<p class=CodeStyleCxSpMiddle><span lang=EN-US>Accuracy of class 5:- 0.5850 ~
 58%</span></p>
 
-<p class=CodeStyleCxSpMiddle><span lang=EN-US>Accuracy of class 6:� 0.7350 ~
+<p class=CodeStyleCxSpMiddle><span lang=EN-US>Accuracy of class 6:- 0.7350 ~
 74%</span></p>
 
-<p class=CodeStyleCxSpMiddle><span lang=EN-US>Accuracy of class 7:� 0.7410 ~
+<p class=CodeStyleCxSpMiddle><span lang=EN-US>Accuracy of class 7:- 0.7410 ~
 74%</span></p>
 
-<p class=CodeStyleCxSpMiddle><span lang=EN-US>Accuracy of class 8:� 0.9650 ~
+<p class=CodeStyleCxSpMiddle><span lang=EN-US>Accuracy of class 8:- 0.9650 ~
 96%</span></p>
 
-<p class=CodeStyleCxSpLast><span lang=EN-US>Accuracy of class 9:� 0.6940 ~ 69%</span></p>
+<p class=CodeStyleCxSpLast><span lang=EN-US>Accuracy of class 9:- 0.6940 ~ 69%</span></p>
 
 <p class=MsoNormal><span lang=EN-US>or we can use class name:</span></p>
 
@@ -3656,7 +3656,7 @@ successfully.</span></p>
 <p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
 lang=EN-US>7.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span><span lang=EN-US>We try many predictions with our test images and
-get many wonderful results. �</span></p>
+get many wonderful results. -</span></p>
 
 <p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
 lang=EN-US>8.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -3681,7 +3681,7 @@ lang=EN-US>VII.<span style='font:7.0pt "Times New Roman"'>&emsp;&nbsp;&nbsp;&nbs
 <p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'><span lang=EN-US>1.<span
 style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
 lang=EN-US>We can review and test more to find the reason why the accuracy
-through endpoint is much lower than the result from training � <i>97%</i> and <i>80%</i>.</span></p>
+through endpoint is much lower than the result from training - <i>97%</i> and <i>80%</i>.</span></p>
 
 <p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
 lang=EN-US>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -3734,26 +3734,26 @@ href="https://sagemaker.readthedocs.io/en/stable/frameworks/pytorch/using_pytorc
 <p class=MsoListParagraphCxSpMiddle style='margin-left:.75in;text-indent:-.25in'><span
 lang=EN-US>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span><span lang=EN-US><a
-href="https://aws.amazon.com/ec2/instance-types/g4/">Amazon EC2 G4 Instances �
+href="https://aws.amazon.com/ec2/instance-types/g4/">Amazon EC2 G4 Instances -
 Amazon Web Services (AWS)</a></span></p>
 
 <p class=MsoListParagraphCxSpMiddle style='margin-left:.75in;text-indent:-.25in'><span
 lang=EN-US>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span><span lang=EN-US><a
 href="https://ramseyelbasheer.io/2021/06/20/a-2021-guide-to-improving-cnns-optimizers-adam-vs-sgd/">A
-2021 Guide to improving CNNs-Optimizers: Adam vs SGD � ML</a></span></p>
+2021 Guide to improving CNNs-Optimizers: Adam vs SGD - ML</a></span></p>
 
 <p class=MsoListParagraphCxSpMiddle style='margin-left:.75in;text-indent:-.25in'><span
 lang=EN-US>6.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span><span lang=EN-US><a
 href="https://pytorch.org/tutorials/beginner/transfer_learning_tutorial.html">Transfer
-Learning for Computer Vision Tutorial � PyTorch Tutorials</a></span></p>
+Learning for Computer Vision Tutorial - PyTorch Tutorials</a></span></p>
 
 <p class=MsoListParagraphCxSpLast style='margin-left:.75in;text-indent:-.25in'><span
 lang=EN-US>7.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span><span lang=EN-US><a
 href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html">Matplotlib.pyplot.plot
-� Matplotlib 3.5.1 documentation</a></span></p>
+- Matplotlib 3.5.1 documentation</a></span></p>
 
 <p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
 
